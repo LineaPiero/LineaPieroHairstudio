@@ -1,0 +1,55 @@
+menu {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 30px
+   }
+menu a{
+   display: inline-block;
+   padding: 10px 10px;
+   background: white;
+   color: black;
+   font-weight: bold;
+   text-decoration: none;
+   align-items: center;
+   border-radius: 5px;
+   margin: 10px 10px;
+}
+
+body {
+   margin: 20;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20px;
+ }
+ h1 {
+   margin: 0;
+   text-align: center;
+   color: brown;
+   font-size: 60px;
+ }
+ Header {
+   background-image: url("www.https://unsplash.com/photos/E9ZwWcMGzj8.com");
+   background-size: cover;
+   height: 300px;
+   padding-top: 150px; 
+ }
+
+.top-heading {
+   color: orangered;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 40px;
+}
+
+.grey-box {
+   background-color: grey;
+   padding: 20px;
+   width: 1200px;
+   display: flex;
+   flex-direction: row;
+}
+
+.grey-box img {
+   width: 40%;
+   margin: 15pt;
+}
