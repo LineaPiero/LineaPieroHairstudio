@@ -3,53 +3,182 @@ menu {
    align-items: center;
    justify-content: center;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 30px
-   }
-menu a{
+   color:rgb(94, 82, 66);
+   font-size: 1em;
+}
+   menu a{
    display: inline-block;
    padding: 10px 10px;
-   background: white;
-   color: black;
+   background: whitesmoke;
+   color: rgb(94, 82, 66);
    font-weight: bold;
    text-decoration: none;
    align-items: center;
-   border-radius: 5px;
+   border-radius: 0px;
    margin: 10px 10px;
 }
-
-body {
-   margin: 20;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 20px;
- }
- h1 {
-   margin: 0;
-   text-align: center;
-   color: brown;
-   font-size: 60px;
- }
- Header {
-   background-image: url("www.https://unsplash.com/photos/E9ZwWcMGzj8.com");
-   background-size: cover;
-   height: 300px;
-   padding-top: 150px; 
- }
-
-.top-heading {
-   color: orangered;
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 40px;
+menu :hover {
+font-size: 1.2em;
+font-weight: bolder;
 }
 
-.grey-box {
-   background-color: grey;
-   padding: 20px;
-   width: 1200px;
+.hamburger {
    display: flex;
-   flex-direction: row;
+   width: 30px;
+   height: 30px;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.hamburger div {
+   width: 30px;
+   height: 5px;
+   background:rgb(94, 82, 66); 
+   margin-left: 15px;
+}
+.hamburger :hover {
+   width: 35px;
+   height: 7px;
+   background:rgba(102, 92, 92, 0.493);
+}
+body {
+   margin: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 25px;
+}
+p {
+   margin: 2px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 25px;
+   text-align: center;
+   color:  rgb(165, 134, 95);
+}
+ h1 {
+   margin: 25px;
+   text-align: center;
+   color:tan;
+   font-size: 1.8em;
+ }
+ span {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: 10px;
+ }
+ h2 {
+   margin: 20px;
+   color: rgb(94, 82, 66);
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+   font-size: 1.5em;
+   padding: 10px;
+ }
+ h3 {
+   margin: 30px;
+   text-align: center;
+   color: rgb(165, 134, 95);
+   font-size: 1.2em;
+ }
+ h4 {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   text-align: left;
+   color:  rgb(165, 134, 95); 
+ }
+
+ .textbox-1 {
+   margin: 30px;
+   padding: 10px 35px 0px 35px; 
+   border: 10px;
+   text-align: center;
+   color: rgb(165, 134, 95);
 }
 
-.grey-box img {
-   width: 40%;
-   margin: 15pt;
+ header {
+   background-blend-mode: luminosity;
+   background-size: cover;
+   height: 100px;
+   padding: 30px; 
+   border: 0px;
+ }
+
+.flex-parent {
+   background-color:rgba(221, 221, 221, 0.493);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+
+.flex-child1 {
+   width: 25%;
+   height: 90%;
+   margin: 5px;
+   padding: 5px;
+}
+.flex-child1 img{
+   width: 100%;
+}
+.flex-child2 {
+   width: 80%;
+   height: 50px;
+   margin: 5px;
+   padding: 5px;
+}
+
+img.hairlarge {
+   width: 100%;
+}
+
+img.headerimage {
+   width: 100%;
+}
+
+img.visitcard {
+   margin: 30px;
+   margin: auto;
+   display: block;
+}
+
+img.owner {
+   width: 90%;
+   margin: auto;
+   margin-bottom: 20px;
+   display: block;
+}
+
+
+
+/*desktop*/
+@media (min-width: 1025px) {
+     
+   img.visitcard {
+      width: 70%;
+   }
+}
+
+/*tablet*/
+@media (min-width: 667px) and (max-width: 1024px) {
+   body {
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 23px;
+   } 
+   
+   img.visitcard {
+      width: 75%;
+   }
+}
+
+/*mobile*/
+@media (max-width: 666px) {
+   body {
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 20px;
+   } 
+
+   img.visitcard {
+      width: 90%;
+   }
+
 }
