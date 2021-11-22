@@ -1,0 +1,10 @@
+// Mobile Menu Toggle
+
+// Define which element to select
+var hamburgerButton = document.querySelector('.hamburger');
+
+// If the hamburgerButton is clicked, toggle the mobile-menu-open class in the html element
+hamburgerButton.addEventListener('click', function() {
+    document.documentElement.classList.toggle('mobile-menu-open');
+});
+
